@@ -28,7 +28,7 @@
             android:id="@+id/textQuote"
             android:text="@string/loading"
             tools:text="Some example text to show"
-            android:fontFamily="@font/starjedi"
+            android:fontFamily="@font/starwars_font"
 
             />
         <LinearLayout

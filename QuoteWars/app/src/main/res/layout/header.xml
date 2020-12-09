@@ -10,5 +10,5 @@
     android:textColor="@color/darkest_grey"
     android:textAlignment="center"
     android:textSize="20sp"
-    android:fontFamily="@font/starjedi"
+    android:fontFamily="@font/starwars_font"
     />

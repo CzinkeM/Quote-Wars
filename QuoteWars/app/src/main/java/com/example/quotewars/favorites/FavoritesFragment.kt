@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.*
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -40,8 +41,11 @@ class FavoritesFragment : Fragment() {
                 adapter.addHeaderAndSubmitList(it)
             }
         })
+
+
         setHasOptionsMenu(true)
         return binding.root
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

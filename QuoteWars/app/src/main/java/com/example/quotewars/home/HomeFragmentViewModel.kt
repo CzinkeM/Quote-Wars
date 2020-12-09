@@ -15,9 +15,8 @@ import com.example.quotewars.database.QuoteDatabase
 
 class HomeFragmentViewModel: ViewModel() {
 
-    val dailyQuote = "This is the daily quote"
     fun openGithub(context: Context){
-        val pageURL="http://www.google.com"
+        val pageURL="https://github.com/CzinkeM/Quote-Wars"
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(pageURL))
         context.startActivity(browserIntent)
     }

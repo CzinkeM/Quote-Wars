@@ -50,7 +50,7 @@
             tools:text="Its a simple quote"
             android:textSize="15sp"
             android:textColor="@color/whiter"
-            android:fontFamily="@font/starjedi"
+            android:fontFamily="@font/starwars_font"
             />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

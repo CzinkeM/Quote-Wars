@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/toQuoteFragment"
-            app:destination="@id/quoteFragment" />
+            app:destination="@id/quoteFragment"
+            app:popUpTo="@id/quoteFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_homeFragment_to_favoritesFragment"
-            app:destination="@id/favoritesFragment" />
+            app:destination="@id/favoritesFragment"
+            app:popUpTo="@id/favoritesFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/quoteFragment"
@@ -34,7 +38,9 @@
         tools:layout="@layout/fragment_favorites">
         <action
             android:id="@+id/navigateToQuoteInspectfragment"
-            app:destination="@id/quoteInspectFragment" />
+            app:destination="@id/quoteInspectFragment"
+            app:popUpTo="@id/quoteInspectFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/quoteInspectFragment"
@@ -49,6 +55,8 @@
             app:argType="integer" />
         <action
             android:id="@+id/navigateBackToRecyclerView"
-            app:destination="@id/favoritesFragment" />
+            app:destination="@id/favoritesFragment"
+            app:popUpTo="@id/favoritesFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

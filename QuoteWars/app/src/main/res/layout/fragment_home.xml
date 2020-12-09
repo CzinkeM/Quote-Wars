@@ -40,7 +40,7 @@
             android:layout_height="150dp"
             android:layout_marginHorizontal="32dp"
             android:layout_marginVertical="16dp"
-            android:fontFamily="@font/starjedi"
+            android:fontFamily="@font/starwars_font"
             android:gravity="center"
             android:padding="5dp"
             android:text="@string/beWithYou"
@@ -114,7 +114,6 @@
             app:srcCompat="@drawable/ic_github"
             app:tint="@color/yellow"
             android:padding="5dp"/>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
