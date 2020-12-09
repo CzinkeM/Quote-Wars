@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quote Wars</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mainImageDes">A picture about the app logo</string>
+    <string name="btnQuote">Quote</string>
+    <string name="btnFav">Favorite</string>
+    <string name="btnNext">Next</string>
+    <string name="loading">Loading..</string>
+    <string name="header_text">Your favorite quotes</string>
+    <string name="btnDeleteFromDB">Remove from Favorites</string>
+    <string name="info">Az applikációval, egy web API csatlakozva véletlenszerű StarWars idézeteket
+        tekinthetünk meg. A számunkra tetszőket eltudjuk menteni a kedvenceink közé és, ha egyre
+        ráunnánk akkor kitörölhetjük őket egyesével vagy akár az összeset egyszerre is.
+    </string>
+    <string name="btnClose">Close</string>
+    <string name="beWithYou">"May the quotes be with you”</string>
+    <string name="signo">by Czinke Márton</string>
+</resources>

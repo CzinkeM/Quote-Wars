@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="quoteViewModel"
+            type="com.example.quotewars.quote.QuoteViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/quoteMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/darkest_grey">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:id="@+id/textQuote"
+            android:text="@string/loading"
+            tools:text="Some example text to show"
+            android:fontFamily="@font/starjedi"
+
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAddToFavorites"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiter"
+                android:layout_weight="1"
+                android:text="@string/btnFav"
+                app:icon="@drawable/favorite_filled_24_white"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/darker_grey"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonNextQuote"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/whiter"
+                android:text="@string/btnNext"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/darker_grey"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</layout>

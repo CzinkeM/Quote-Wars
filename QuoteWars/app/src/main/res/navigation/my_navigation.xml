@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quotewars.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toQuoteFragment"
+            app:destination="@id/quoteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quoteFragment"
+        android:name="com.example.quotewars.quote.QuoteFragment"
+        android:label="fragment_quote"
+        tools:layout="@layout/fragment_quote" >
+        <argument
+            android:name="quote"
+            app:argType="string"
+            android:defaultValue="defaultQuote" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.quotewars.favorites.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/navigateToQuoteInspectfragment"
+            app:destination="@id/quoteInspectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quoteInspectFragment"
+        android:name="com.example.quotewars.inspect.QuoteInspectFragment"
+        android:label="QuoteInspectFragment"
+        tools:layout="@layout/fragment_quote_inspect">
+        <argument
+            android:name="quote"
+            app:argType="string" />
+        <argument
+            android:name="quoteId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/navigateBackToRecyclerView"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+</navigation>
